@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Bellaxoxo</title>
+</head>
+<body>
+    <header>
+            
+        <div class="logo" >Bellaxoxo</div>
+        <div class='pens'>
+            <div class='line'></div>
+            <div class='line'></div>
+            <div class='line'></div>
+        </div>
+        <nav class='nav_bar'>
+            <ul>
+                <li>
+                    <a href="" class='active'>Escritas</a>
+                </li>
+                <li>
+                    <a href="">Canetas</a>
+                </li>
+                <li>
+                    <a href="">Presentes</a>
+                </li>
+                <li>
+                    <a href="">Feedback</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+                <li>
+                    <a href=""><img class="perfil" src="image/Vector(1).png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img class="cart" src="image/Cart3.png" alt=""></a>
+                </li>
+            </ul>
+    
+        </nav>
+    </header>
+
+    <main>
+        <section class="slogan">
+            <div id="content">
+            
+            </div>
+        </section>
+    </main>
+
+    <script>
+        pens = document.querySelector(".pens");
+        pens.onclick = function(){
+            navBar = document.querySelector(".nav_bar")
+            navBar.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
