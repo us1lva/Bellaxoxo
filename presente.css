@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+
+    background-color: #F0CFC5;
+}
+
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+      format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
+  }
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main{
+    position: relative;
+    top: 40px;
+    height: 1055px;
+}
+
+.perfil{
+    height: 35px;
+}
+
+.cart{
+    height: 35px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #F0CFC5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo a{
+    font-size: 35px;
+    font-weight: bold;
+    color: #943E3F;
+    
+}
+
+.pens{
+    display: none;
+}
+
+.nav_bar ul{
+    display: flex;
+}
+
+.nav_bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    
+}
+.nav_bar ul li a:hover{
+    color: #F0CFC5;
+    background-color: #fefefe;
+}
+
+.nav_bar ul li a.active{
+    color: #F0CFC5;
+    background-color: #fefefe;
+}
+
+
+
+.product-container {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+    gap: 20px; /* Mais espaçamento entre os produtos */
+    justify-items: center;
+    max-width: 1350px; /* Aumentando a largura máxima */
+    margin: 0 auto;
+}
+
+.product {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px; /* Produtos maiores para mais destaque */
+    text-align: center;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa para destaque */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 15px;
+    border-bottom: #e4e4e4 0.1px solid;
+}
+
+.product h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product h2:hover{
+    color: #FF97B7;
+}
+
+
+.a-price-symbol{
+    position: relative;
+    top: -10px;
+    font-size: .5em;
+}
+.tudo_preco {
+    position: relative;
+    top: 4px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.add-to-cart {
+    background-color: #FF86C8; 
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 180px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #FE5FA0;
+    transform: translateY(-2px); /* Efeito de "elevação" ao passar o mouse */
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
+    height: 250px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+footer h5{
+    font-size: 20px;
+    text-align: center;
+}
+footer ul li{
+    padding-top: 10px;
+    text-align: center;
+}
